@@ -1,0 +1,31 @@
+.second-block{
+  margin-top:40px;
+  margin-bottom: 60px;
+}
+
+.second-block ul li  {
+  list-style: none;
+  text-align: left;
+}
+
+.second-block ul  a {
+  color: black;
+  text-decoration: underline;
+}
+
+.second-block .card-footer{
+  text-align: center;
+
+}
+
+.first-h1{
+  margin-bottom:20px;
+  margin-top:80px;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.second-block .card{
+  height: 300px;
+  margin-bottom: 14px;
+ /* font-family: Lora,'Times New Roman',serif; */
+}

@@ -1,0 +1,61 @@
+<!--Simple three fields form, therefore the template form is used instead of Reactive-->
+<div class="row h-100 justify-content-center second_row">
+  <div class="col-md-6 ">
+    <!--The form is wrapped in a bootstrap 4 Card class -->
+    <div class="card bg-primary text-white">
+      <div class="card-header text-center"> <h4>Contact Form</h4></div>
+      <div class="card-body bg-light text-dark text-justify">
+        <div class="container">
+          <h2>Get In Touch</h2>
+          <form novalidate #messageForm = "ngForm" (ngSubmit)= "sendMessage(messageForm.value)">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <em class="required" *ngIf="messageForm.controls.name?.invalid && (messageForm.controls.name?.touched || activateMessage)">Required</em>
+              <input type="text" name="name" (ngModel) = "name" class="form-control" id="name" placeholder="Enter your name" required >
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <em class="required" *ngIf="messageForm.controls.email?.invalid && (messageForm.controls.email?.touched || activateMessage)">Required</em>
+              <input type="email" name="email" (ngModel) = "email" class="form-control" id="email" email="true" placeholder="Enter email" required >
+            </div>
+            <div class="form-group">
+              <label for="textArea">Message:</label>
+              <em class="required" *ngIf="messageForm.controls.messageContent?.invalid && (messageForm.controls.messageContent?.touched || activateMessage)">Required</em>
+              <textarea rows="4" (ngModel)="messageContent" cols="50" class="form-control" id="textArea"  name="messageContent" required >
+              </textarea>
+            </div>
+            <span (mouseenter)="activateMessage= true" (mouseleave)="activateMessage= false">
+               <button type="submit" [disabled]= "messageForm.invalid"  class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Hi {{messageForm.value.name}}!</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p class="text-justify"> your message has been submitted.</p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="redirectToHomePage()" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
