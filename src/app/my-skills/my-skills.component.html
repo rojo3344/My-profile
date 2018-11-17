@@ -1,66 +1,46 @@
 <!--The four columns of bootstrap are used to display each skill-set -->
-<h1 class="text-center first-h1">Programming Skills</h1>
-<div class="container bg-light second-block">
-    <div class="row">
+<h2 class="text-center h2  first-h2">PROGRAMMING SKILLS</h2>
+<div class="container-fluid  skills-wrapper">
+    <div class="row d-flex justify-content-center h-100">
         <div class="col-md-3 ">
-          <div class="card bg-info">
-              <h4 class="card-header text-center">Front-End</h4>
-              <div class="card-body ">
-                  <ul >
-                    <a (click)="showLevel('3')"><li>HTML</li></a>
-                    <li><a (click)="showLevel('3')">Javascript</a></li>
-                    <li><a (click)="showLevel('3')">CSS</a></li>
-                    <li><a (click)="showLevel('3')">Angular</a></li>
-                    <li><a (click)="showLevel('3')">Jquery</a></li>
-                  </ul>
-              </div>
-              <div class="card-footer bg-light"></div>
-          </div>
-        </div>
+            <div class="card align-items-center p-3">
+                <div class="bg-info skill-detail text-white text-center"><h3>Languages</h3></div>
+                <a (click)="showLevel('3')" class=""> HTML</a>
+                <a (click)="showLevel('3')">Javascript</a>
+                <a (click)="showLevel('3')">CSS</a>
+                <a (click)="showLevel('3')">PHP</a>
+                <a (click)="showLevel('2')">Java</a>
+            </div>
 
+        </div>
         <div class="col-md-3">
-            <div class="card bg-warning">
-                <h4 class="card-header text-center">Back-End</h4>
-                <div class="card-body ">
-                    <ul>
-                      <li><a (click)="showLevel('2')">PHP</a></li>
-                      <li><a (click)="showLevel('2')">Node.Js</a></li>
-                      <li><a (click)="showLevel('2')">Laravel</a></li>
-                      <li><a (click)="showLevel('2')">Symfony</a></li>
-                      <li><a (click)="showLevel('2')">Express.Js</a></li>
-                    </ul>
-                </div>
-                <div class="card-footer bg-light"></div>
+            <div class="card align-items-center p-3">
+                <span class="bg-info skill-detail text-white text-center align-self-center"><h3>Frameworks</h3></span>
+                <a (click)="showLevel('2')">Node.Js</a>
+                <a (click)="showLevel('2')">Laravel</a>
+                <a (click)="showLevel('2')">Symfony</a>
+                <a (click)="showLevel('2')">Express.Js</a>
+                <a (click)="showLevel('3')">Angular</a>
+                <a (click)="showLevel('3')">Jquery</a>
+                <a (click)="showLevel('3')">Bootstrap</a>
+                <a (click)="showLevel('2')">Vue.JS</a>
+                <a (click)="showLevel('3')">SASS</a>
+                <a (click)="showLevel('1')">Android Studio</a>
             </div>
         </div>
-
-        <div class="col-md-3">
-            <div class="card bg-success">
-                <h4 class="card-header text-center">Database</h4>
-                <div class="card-body ">
-                    <ul>
-                      <li><a (click)="showLevel('3')">Mysql</a></li>
-                      <li><a (click)="showLevel('3')">Postgres</a></li>
-                    </ul>
-                </div>
-                <div class="card-footer bg-light"></div>
+        <div class="col-md-3 ">
+            <div class="card align-items-center p-3">
+                <span class="bg-info skill-detail text-white text-center "><h3>Database</h3></span>
+                <a (click)="showLevel('3')">Mysql</a>
+                <a (click)="showLevel('3')">Postgres</a>
+                <a (click)="showLevel('2')">MongoDB</a>
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="col-md-3">
-            <div class="card bg-danger">
-                <h4 class="card-header text-center">Movil</h4>
-                <div class="card-body">
-                    <ul>
-                      <li><a (click)="showLevel('2')">Java</a></li>
-                      <li><a (click)="showLevel('1')">Android Studio</a> </li>
-                    </ul>
-                </div>
-                <div class="card-footer bg-light"></div>
-             </div>
-        </div>
-
-
-      <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:100%;">{{value}}</div>
+<div class="container-fluid  progress-bar-background">
+    <div class="progress bg-light">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" [ngStyle]= "showPercentage(value)">{{value}}</div>
     </div>
 </div>

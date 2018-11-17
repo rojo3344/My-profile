@@ -1,25 +1,33 @@
+
+.second_row{
+  margin-bottom: 50px;
+  padding-top:30px;
+  background:linear-gradient( rgba(50, 115, 220, 0.2), rgba(50, 115, 220, 0.2) ), url('assets/ocean.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .top-wrapper{
-  background-image: url('assets/home-bg.jpg');
+  /*background: rgba(50, 115, 220, 0.2);*/
+  background: url('assets/home-bg.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 30px;
-  padding-top:10px;
-}
-.second_row{
-  margin-top:30px;
+  padding-top: 130px;
+  margin-top: -45px;
 }
 
-.top_btn{
-  margin-right: 0px;
+.card-content p, p{
+  font-size: 17px;
 }
 
-.my-header-wrapper{
-  background-image: url('assets/codes-img.jpg');
-  height: 100px;
-  margin-top:40px;
-  padding-bottom: 20px;
+.profile-background{
+  position: absolute;
+  box-shadow: 10px 10px 5px grey;
+  width: 100%;
+  -webkit-clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%);
 }
 
-.my-menu{
-  margin-top: -22px;
-}

@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 .card-body{
   padding: 40px;
+}
+
+.first-pic{
+  margin-right: 12px;
+}
+
+.pic-box{
+  background-color: beige;
+
+}
+
+.second-pic{
+  margin-top:30px;
+  margin-right: 10px;
+}
+
+h3{
+  font-family: 'Pacifico', cursive;
 }

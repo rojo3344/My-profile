@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 .required{
   float: right;
   color: maroon;
   margin-right: 15px;
+}
+
+.jumbotron h3{
+  font-family: 'Pacifico', cursive;
 }

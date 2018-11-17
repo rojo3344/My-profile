@@ -1,18 +1,16 @@
-<!-- Navigation menu-->
-<div class="top-wrapper" style="text-align:center" xmlns="http://www.w3.org/1999/html">
-  <div class="container top_container">
-    <div class="row">
-      <div class="col-md-6 offset-3 my-header-wrapper jumbotron">
-        <div class="d-flex my-menu justify-content-center  mb-3">
-          <div class="p-2 bg-danger" [routerLink]="['/profile']"><button class="btn" >My Profile</button></div>
-          <div class="p-2 bg-danger" [routerLink]="['/blog']"><button class="btn" >Story Line</button></div>
-          <div class="p-2 bg-danger" [routerLink]="['/contact']"><button class="btn" >Contact</button></div>
-        </div>
-      </div>
+<div class="jumbotron col-md-12 col-sm-12  profile-background">
+    <div class="my-profile container top-wrapper"  style="text-align:center" xmlns="http://www.w3.org/1999/html">
+        <img class="profile-img img-fluid rounded-circle"  alt="Robert profile picture" src="assets/profile.jpg">
+        <h2 class="text-center">Robert Joseph</h2>
+        <h6 class="text-secondary">Web Developer</h6>
+        <div class="line"></div>
     </div>
-  </div>
-  <img class="rounded-circle" width="240" alt="Robert profile picture" src="assets/profile.jpg">
-  <div class="line"></div>
+</div>
+
+<div class="d-flex justify-content-center text-uppercase  mb-3">
+    <div class="p-2 my-nav active-border" [routerLink]="['/profile']">My Profile</div>
+    <div class="p-2 my-nav" [routerLink]="['/blog']">Story Line</div>
+    <div class="p-2 my-nav" [routerLink]="['/contact']">Contact</div>
 </div>
 
 <router-outlet></router-outlet>
@@ -56,6 +54,5 @@
       <a href="">Robert Joseph</a>
     </div>
     <!-- Copyright -->
-
 </footer>
 <!-- Footer -->

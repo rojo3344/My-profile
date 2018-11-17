@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans+Condensed:300|Six+Caps|Spicy+Rice');
+
 .second-block{
-  margin-top:40px;
+  margin-top:90px;
   margin-bottom: 60px;
 }
 
@@ -13,19 +15,69 @@
   text-decoration: underline;
 }
 
+.h4{
+  font-family: 'fionaregular',Georgia,serif;
+  font-weight: normal;
+  font-weight: 300;
+  line-height: 1;
+  margin: 1em 0;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+.second-block .card-header{
+  /*color: cornsilk;*/
+}
+
+.second-block .card-body {
+
+}
+
 .second-block .card-footer{
   text-align: center;
-
 }
 
-.first-h1{
-  margin-bottom:20px;
-  margin-top:80px;
-  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+.first-h2{
+  margin-top:30px;
+  margin-bottom: 40px;
+  color: #d58165;
 }
-
 .second-block .card{
-  height: 300px;
-  margin-bottom: 14px;
- /* font-family: Lora,'Times New Roman',serif; */
+  height: 330px;
+  margin-top:20px;
+  background: transparent;
+}
+
+.skill-detail h3{
+  margin-top: 22%;
+}
+
+.progress{
+  width: 40%;
+  margin:auto ;
+  margin-top:40px;
+  height: 20px;
+  background: transparent;
+  border-radius:0;
+}
+
+.progress-bar-background{
+  color: rgb(255, 255, 255);
+  background-color: #ddd;
+  height:50px;
+}
+
+.skill-detail{
+  height: 200px;
+  width: 200px;
+  -webkit-clip-path: polygon(0 0, 99% 0, 99% 66%, 78% 69%, 61% 88%, 62% 69%, 0 66%);
+  clip-path: polygon(0 0, 99% 0, 99% 66%, 78% 69%, 61% 88%, 62% 69%, 0 66%);
+}
+
+.card a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-header{
+  opacity: 0.70;
 }

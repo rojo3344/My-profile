@@ -2,10 +2,12 @@
 <div class="row h-100 justify-content-center second_row">
   <div class="col-md-6 ">
     <!--The form is wrapped in a bootstrap 4 Card class -->
-    <div class="card bg-primary text-white">
+    <div class="card bg-info text-white">
       <div class="card-header text-center"> <h4>Contact Form</h4></div>
       <div class="card-body bg-light text-dark text-justify">
         <div class="container">
+          <div class="jumbotron"><h3 class="text-center text-danger">"Hello!" is legal in over 100 countries and tax-free in 4 continents.</h3></div>
+
           <h2>Get In Touch</h2>
           <form novalidate #messageForm = "ngForm" (ngSubmit)= "sendMessage(messageForm.value)">
             <div class="form-group">
@@ -25,7 +27,7 @@
               </textarea>
             </div>
             <span (mouseenter)="activateMessage= true" (mouseleave)="activateMessage= false">
-               <button type="submit" [disabled]= "messageForm.invalid"  class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+               <button type="submit" [disabled]= "messageForm.invalid"  class="btn btn-info" data-toggle="modal" data-target="#myModal">Submit</button>
             </span>
           </form>
         </div>
