@@ -5,8 +5,8 @@ import {ContactComponent} from './contact.component';
 import {ProfileComponent} from './profile/profile.component';
 
 export const appRoutes: Routes = [
-  {path:'blog', component: BlogComponent},
-  {path:'contact', component:ContactComponent},
-  {path:'profile', component: ProfileComponent},
+    {path:'profile',component: ProfileComponent},
+    {path:'blog', component: BlogComponent},
+  {path:'contact',component:ContactComponent},
   {path:'', pathMatch:'full', redirectTo: 'profile'},
 ]

@@ -1,13 +1,11 @@
 .profile-wrapper{
   padding-top: 10px;
   padding-bottom: 10px;
-  filter: grayscale(10%);
   background-image: url("../../assets/ocean.jpg");
-
 }
 
 .card-body {
-  padding:30px;
+  padding:15px;
   -webkit-box-shadow: 11px -7px 35px -7px rgba(0,0,0,0.75);
   -moz-box-shadow: 11px -7px 35px -7px rgba(0,0,0,0.75);
   box-shadow: 11px -7px 35px -7px rgba(0,0,0,0.75);
@@ -17,21 +15,18 @@
   font-family: Arial,sans-serif;
 }
 
-.card-background-top{
-  right: 0px;
-  width: 50%;
-  height: 100%;
-  opacity: 0.10;
-  background: transparent;
-}
-
 .card{
   opacity: 0.70;
 }
 
 .about-me-c{
-  opacity: 0.80;
   margin: 50px 0px;
+  background: transparent;
+}
+
+.about-me-b{
+  opacity: 0.90;
+  /*background: #d58165;*/
 }
 
 h4{
@@ -42,12 +37,132 @@ h4{
   margin: 1em 0;
   margin: 1.5rem 0;
   padding: 0;
+  color: #d58165;
+}
+
+.card-content h3{
+  color: #d58165;
 }
 
 .education{
-  margin-right:12px;
+  margin-right:20px;
 }
 
 .marketing{
-  margin-bottom: 150px;
+  padding-top:20px;
+  margin-bottom: 130px;
+}
+
+/*Animation on loading*/
+.bounce-in-top {
+  -webkit-animation: bounce-in-top 1.1s both;
+  animation: bounce-in-top 2.1s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation bounce-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }

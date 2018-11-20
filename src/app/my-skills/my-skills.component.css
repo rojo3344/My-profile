@@ -76,6 +76,7 @@
 .card a{
   text-decoration: underline;
   cursor: pointer;
+  color: #d58165;
 }
 
 .card-header{

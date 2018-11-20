@@ -29,5 +29,17 @@
   width: 100%;
   -webkit-clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%);
   clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%);
+  border-bottom: 4px solid #d58165;
 }
 
+@media only screen
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+.my-profile h3{
+  margin-top: 20px;
+}
+ .profile-img{
+
+ }
+}

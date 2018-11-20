@@ -2,7 +2,6 @@
 .active-border, .my-nav:hover {
   border-bottom: 3px solid red;
 }
-
 .top-nav{
   background: #eeeeee; /* Old browsers */
   background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
@@ -12,16 +11,20 @@
 }
 
 .profile-img{
-  margin-top: 40px;
+  margin-top: 110px;
   max-width: 130px;
   max-height: 130px;
+}
+
+.my-profile h2{
+  font-family: 'fionaregular',Georgia,serif;
 }
 
 .line {
   border-top: 1px solid #30353b;
   padding-top:5px;
   padding-bottom: 5px;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   width: 30%;
   position: relative;
 }
@@ -30,7 +33,7 @@
   content: "";
   width: 10px;
   height: 10px;
-  background: #30353b;
+  background: #d58165;
   border-radius: 5px;
   position: absolute;
   top: -6px;
