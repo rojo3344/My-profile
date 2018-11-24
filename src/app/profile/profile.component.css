@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.profile-content{
+  width:80%;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top:100px;
+  background-color: #404040;
+  border: 1px solid black;
+  opacity: 0.70;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
 .profile-wrapper{
+  margin-bottom: 60px;
   padding-top: 10px;
-  padding-bottom: 10px;
   background-image: url("../../assets/ocean.jpg");
+}
+
+.profile-wrapper p, .about-me-c p{
+  font-family: 'Playfair Display', serif;
 }
 
 .card-body {
@@ -15,17 +31,12 @@
   font-family: Arial,sans-serif;
 }
 
-.card{
-  opacity: 0.70;
-}
-
 .about-me-c{
   margin: 50px 0px;
   background: transparent;
 }
 
 .about-me-b{
-  opacity: 0.90;
   /*background: #d58165;*/
 }
 
@@ -44,13 +55,15 @@ h4{
   color: #d58165;
 }
 
-.education{
-  margin-right:20px;
+.web-dev{
+  border-left: 2px solid #ffc107;
+  border-bottom: 2px solid #28a745;
 }
+
 
 .marketing{
   padding-top:20px;
-  margin-bottom: 130px;
+  margin-bottom: 30px;
 }
 
 /*Animation on loading*/
